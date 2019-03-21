@@ -91,65 +91,24 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
+/* =======================================================================================================
    Author's custom styles
-   ========================================================================== */
+   ===================================================================================================== */
 
 html {
   background-color: #fff;
   height: 100%;
-  width: 100%;
+  width: 100%; 
+  background: url(../img/forest.jpg) no-repeat center center fixed; /*Photo by Lukasz Szmigiel on Unsplash */
+  background-size: cover;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 0 2em;
+  padding: 0 8em;
   font-size: 1.25em;
   height: 100%;
   color: #fff;
-}
-
-header,
-footer {
-    background-color: #222;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-main {
-  background-color: #ccc;
-  height: 250px;
-  width: 100%;
-  flex-flow: wrap;
-}
-
-header,
-footer,
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#div-1,
-#div-2,
-#div-3 {
-  display: flex;
-  
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.25em;
-  height: auto;
-}
-
-.wrapper span {
-  font-family: 'Lora', sans-serif;
-  font-size: 1.3em;
 }
 
 .flex-container {
@@ -157,24 +116,133 @@ main {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    justify-content:space-between
+    justify-content:space-between;
+    height: 100%; 
+    align-content: space-evenly;
+   
 }
 
 .flex-items {
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: #fff;
-    line-height: 1.5em;
-    font-size: 1.6em;
-    background-color: #f16059;
-    width: 30%;
-    height: 200px;
+    width: 26%;
 }
 
-/* ==========================================================================
+/************************** Header ********************/
+
+header {
+    background:rgba(240,240,240,0.8);
+    text-shadow: -0.5px .5px white;
+    padding-left: 1.5em;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: -150px;
+    flex-flow: wrap;
+    font-size: 1.8em;
+    justify-content: center;
+    color: rgb(22, 22, 22);
+    letter-spacing: -.5px;
+}
+
+p span {
+    font-family: 'Lora', sans-serif;
+    font-size: 2.3em;
+  }
+em {
+    font-style: normal;
+    font-size: 1.25em;
+}
+
+/********************************************************************** Links to pages ******************************************/
+
+#div-1,
+#div-2,
+#div-3 {
+  align-items: center;
+  flex-flow: wrap;
+  color: rgb(22, 22, 22);
+  background:rgba(240,240,240,0.75);
+  border-radius: 8px;
+  margin-top: 0px;
+  padding: 0 .3em 0 .3em; 
+}
+
+/********************************** Div 1: Photo Gallery Link ********************/
+
+#div-1 {
+    font-size: 2em;
+    align-content: space-around;
+    height: 5em;
+    margin-top: -55px;
+}
+#div-1 i {
+    font-size: 2.3em;
+    padding-top: 50px;
+}
+#div-1 p {
+    margin: 0px;
+    padding-bottom: 50px;
+}
+
+/********************************** Div 2: About Me Link ********************/
+
+#div-2 {
+    font-size: 1.2em;
+    height: 3.8em;
+    padding: 20px 0px 20px 0px;
+    margin-top: -55px;
+}
+#div-2 span {
+    align-items: center;
+    font-size: 2em;
+}
+#email {
+    margin: 0px;
+    font-weight: normal;
+}
+
+/********************************** Div 3: Romantic Places Link ********************/
+
+
+#div-3 {
+    font-size: 2.3em;
+    height: 4.5em;
+    align-content: space-around;
+    margin-top: -55px;
+}
+#div-3 p {
+    margin: 0px;
+    font-size: .8em;
+    padding-bottom: 50px;
+}
+#div-3 i {
+    font-size: 2.3em;
+    padding: 50px 10px 0px 10px;
+}
+
+/************************************************************* Footer *********************************************************/
+
+footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5em;
+    color:  rgb(223, 223, 223);
+    margin-top: -2.5em;
+}
+h5 {
+    background:rgba(0,0,0,0.5);
+    padding: .7em;
+    border-radius: .5em;
+}
+
+
+
+/* =============================================================================================================================
    Helper classes
-   ========================================================================== */
+   ============================================================================================================================ */
 
 /*
  * Hide visually and from screen readers:
